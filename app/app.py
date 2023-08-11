@@ -88,7 +88,6 @@ def beta():
     return jsonify(a_dict)
 
 
-# needed to rename this view to avoid function name collision with redis import
 @app.route("/writeredis")
 def writeredis():
     # start tracing the redis client
